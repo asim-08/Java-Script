@@ -5,15 +5,15 @@
 </head>
 <body>
   <script>
+    
+    
     const hour = 17
-    if (hour >= 6 && hour <= 12) {
-      console.log('Good Morning')
-    } else if (hour >= 13 && hour <= 17 ) {
-      console.log('Good afternoon!')
-    } else{
-      console.log('Good night')
-    }
-
+    const greeting = hour >= 6 && hour <= 12 
+    ? 'Good Morning'
+    : hour >= 13 && hour <= 17 
+    ? 'Good afternoon!' 
+    : 'Good night';
+    console.log(greeting)
   </script>
 </body>
 </html>7
