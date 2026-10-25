@@ -7,20 +7,11 @@
   <script>
     const random = Math.random();
 
-    let result = " ";
+    const result = random < 0.5 ? 'heads' : 'tails';
 
-    if (random < 0.5) {
-      result = 'heads'
-    } else {
-      result = 'tails'
-    }
     const guess = 'heads'
 
-    if (guess === result) {
-      console.log('You win')
-    } else {
-      console.log('You lose!')
-    }
+    console.log(guess === result ? 'You win!' : 'You lose!')
 
   </script>
 </body>
