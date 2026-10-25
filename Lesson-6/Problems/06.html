@@ -28,8 +28,12 @@
     ">+2</button>
 
     <button onclick="
+    if (cartQuantity + 3 > 10) {
+      alert('The cart is full')
+    } else {
       cartQuantity = cartQuantity + 3;
       console.log(`Cart quantity: ${cartQuantity}`);
+    }  
     ">+3</button>
 
     <button onclick="
