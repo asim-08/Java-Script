@@ -18,6 +18,8 @@
         return (length * 5280)
       } else if (from === 'ft' && to === 'km') {
         return (length / 3280)
+      } else if (from === 'km' && to === 'ft') {
+        return (length * 3281)
       }
     }
     console.log(convertLength(50, 'miles', 'km'))
