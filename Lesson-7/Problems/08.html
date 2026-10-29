@@ -14,6 +14,8 @@
         return `${length} ${to}`
       } else if (from ===  'ft' && to === 'miles') {
         return (length / 5,280)
+      } else if (from === 'miles' && to === 'ft') {
+        return (length * 5280)
       }
     }
     console.log(convertLength(50, 'miles', 'km'))
