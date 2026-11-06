@@ -25,27 +25,34 @@
       console.log(product)
       */
      
-      const product2 = {
-        name: 'shirt',
-        ['delivery-time']: '1 day',
-        rating: {
-          stars: 4.5,
-          count: 87
-        },
-        fun: function function1() {
-          console.log('Hello Darkness')
-        }
-      };
-      console.log(product2)
-      console.log(product2.name)
-      console.log(product2['name'])
-      console.log(product2['delivery-time'])
-      console.log(product2.rating.count)
-      product2.fun();
+      // const product2 = {
+      //   name: 'shirt',
+      //   ['delivery-time']: '1 day',
+      //   rating: {
+      //     stars: 4.5,
+      //     count: 87
+      //   },
+      //   fun: function function1() {
+      //     console.log('Hello Darkness')
+      //   }
+      // };
+      // console.log(product2)
+      // console.log(product2.name)
+      // console.log(product2['name'])
+      // console.log(product2['delivery-time'])
+      // console.log(product2.rating.count)
+      // product2.fun();
 
-      console.log(JSON.stringify(product2));
-      const jsonString = JSON.stringify(product2)
-      console.log(JSON.parse(jsonString))
+      // console.log(JSON.stringify(product2));
+      // const jsonString = JSON.stringify(product2)
+      // console.log(JSON.parse(jsonString))
+
+      const name = input.value
+      localStorage.setItem('username', name)
+
+       console.log(localStorage.getItem('username'))
+      // localStorage.removeItem('username')
+      // console.log(localStorage.getItem('username'))
     </script>
   </body>
 </html>
