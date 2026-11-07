@@ -47,13 +47,36 @@
       // const jsonString = JSON.stringify(product2)
       // console.log(JSON.parse(jsonString))
 
-      const username = 'Asim'
-      localStorage.setItem('username', username)
-      console.log(localStorage.getItem('username'))
+      // const username = 'Asim'
+      // localStorage.setItem('username', username)
+      // console.log(localStorage.getItem('username'))
       // localStorage.removeItem('username')
       // console.log(localStorage.getItem('username'))
-      localStorage.clear()
-      console.log(localStorage.getItem('username'))
+      // localStorage.clear()
+      // console.log(localStorage.getItem('username'))
+
+      const student = {
+        name: 'Asim',
+        age: 18,
+        course: 'Javascript'
+      };
+      // Convert object into JSON string.
+      const convert_json = JSON.stringify(student);
+      console.log(convert_json)
+
+      // Save JSON string in Local Storage.
+      localStorage.setItem('student', convert_json)
+
+      // Retrieve data from Local storage.
+      const saveStudent = localStorage.getItem('student')
+      console.log(saveStudent)
+
+      // Convert JSON string back into object.
+      const convert_object = JSON.parse(saveStudent);
+      console.log(convert_object)
+
+      // Access object property.
+      console.log(convert_object.name)
     </script>
   </body>
 </html>
